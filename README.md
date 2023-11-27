@@ -1,66 +1,47 @@
-## Foundry
+# Foundry Upgradeable Smart Contract UUPS README
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Overview
 
-Foundry consists of:
+Welcome to the README for Upgradeable Smart Contract with UUPS. This smart contract leverages the Foundry framework to enable seamless upgrades and improvements without disrupting the functionality or state of the existing contract. Below is an overview of the contract, its features, and instructions on deployment and upgrades.
+Table of Contents
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+    Features
+    Requirements
+    Deployment
+    Testing
 
-## Documentation
+Features
 
-https://book.getfoundry.sh/
+    Foundry Integration: Utilizes the Foundry framework for simplified and secure contract upgrades.
 
-## Usage
+    Upgradeability: Allows for seamless upgrades without losing the state or disrupting existing functionality.
 
-### Build
+    Modularity: Organized into modules, making it easy to replace or upgrade specific components without affecting the entire contract.
 
-```shell
-$ forge build
-```
+    Governance: Implements a governance mechanism to ensure decentralized and secure upgrades.
 
-### Test
+Requirements
 
-```shell
-$ forge test
-```
+To deploy and upgrade the smart contract, you will need the following:
 
-### Format
+    Ethereum Development Environment
+    Solidity Compiler
+    Foundry Framework
 
-```shell
-$ forge fmt
-```
+## Deployment
 
-### Gas Snapshots
+Install Foundry by running the bash command
+`curl -L https://foundry.paradigm.xyz | bash`
+`foundryup`
 
-```shell
-$ forge snapshot
-```
+Clone the repository:
 
-### Anvil
+`git clone https://github.com/shazzar-ox/UUPS.git`
 
-```shell
-$ anvil
-```
+Install dependencies:
 
-### Deploy
+cd UUPS
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+## Testing
 
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+1. forge test to run all tests on the contract
