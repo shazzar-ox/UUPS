@@ -1,4 +1,4 @@
-# Foundry Upgradeable Smart Contract UUPS README
+# Foundry Upgradeable Smart Contract UUPS
 
 Overview
 
