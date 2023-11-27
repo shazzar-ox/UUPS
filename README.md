@@ -31,7 +31,9 @@ To deploy and upgrade the smart contract, you will need the following:
 ## Deployment
 
 Install Foundry by running the bash command
+
     curl -L https://foundry.paradigm.xyz | bash
+    
     foundryup
 
 Clone the repository:
