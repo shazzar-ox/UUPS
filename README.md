@@ -31,12 +31,12 @@ To deploy and upgrade the smart contract, you will need the following:
 ## Deployment
 
 Install Foundry by running the bash command
-`curl -L https://foundry.paradigm.xyz | bash`
-`foundryup`
+    curl -L https://foundry.paradigm.xyz | bash
+    foundryup
 
 Clone the repository:
 
-`git clone https://github.com/shazzar-ox/UUPS.git`
+    git clone https://github.com/shazzar-ox/UUPS.git
 
 Install dependencies:
 
@@ -44,4 +44,5 @@ cd UUPS
 
 ## Testing
 
-1. forge test to run all tests on the contract
+1. forge test 
+
